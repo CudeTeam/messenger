@@ -1,0 +1,71 @@
+/* Font */
+@font-face {
+    font-family: "IranSans";
+    src: url("../fonts/regular/IRANSansX-Regular.woff") format("woff"),
+        url("../fonts/regular/IRANSansX-Regular.woff2") format("woff2");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "IranSans";
+    src: url("../fonts/bold/IRANSansX-Bold.woff") format("woff"),
+        url("../fonts/bold/IRANSansX-Bold.woff2") format("woff2");
+    font-style: normal;
+    font-weight: bold;
+}
+
+/* Variables */
+:root {}
+
+/* CSS Reset */
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body,
+input,
+textarea,
+select,
+button,
+::placeholder {
+    font-family: "IranSans", sans-serif;
+    direction: rtl;
+}
+
+textarea {
+    resize: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Utility Classes */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
